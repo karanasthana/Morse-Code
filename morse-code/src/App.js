@@ -118,13 +118,16 @@ export default class App extends Component {
       return (
         <div style={{ backgroundImage: `url(${backgroundImage})`, width: '100vw', height: '100vh' }}>
           <div style={{ position: 'absolute', top: '15vh', justifyContent: 'center', width: '100%', display: 'flex' }}>
-            <input style={{height: '5rem', width: '30vw', fontSize: '4rem'}} onChange={this.onChangeText}/>
+            <input style={{height: '4rem', width: 'auto', minWidth: '250px', maxWidth: '80vw', fontSize: '4rem'}} onChange={this.onChangeText}/>
           </div>
 
           <div style={{ position: 'absolute', bottom: '15vh', justifyContent: 'center', width: '100%', display: 'flex' }}>
-            <div style={{minHeight: '5rem', width: '30vw', fontSize: '3rem', backgroundColor: 'black', color: 'white'}}>
+            <div style={{minHeight: '4rem', width: 'auto', minWidth: '250px', maxWidth: '80vw', fontSize: '3rem', backgroundColor: 'black', color: 'white'}}>
                 {this.state.morseCode}
             </div>
+          </div>
+          <div style={{position: 'absolute', bottom: 0, backgroundColor: 'white', width: '100%', justifyContent: 'center', display: 'flex', fontStyle: 'italic'}}>
+            {'© Karan Asthana ©'}
           </div>
         </div>
       )
