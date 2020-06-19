@@ -80,8 +80,6 @@ export default class App extends Component {
       "@": ".--.-.",
       "(": "-.--.",
       ")": "-.--.-",
-      "space": "   ",
-      "dot": "       ",
     };
 
     state = {
@@ -101,14 +99,15 @@ export default class App extends Component {
       
       for (var i = 0; i < string.length; i++) {
         let char = string.charAt(i);
+        let elementCode = '';
         if (char === ' ') {
-          char = 'space';
-        }
-        if (char === '.') {
-          char = 'dot';
+          elementCode = '\xa0\xa0\xa0';
+        } else if (char === '.') {
+          elementCode = '\xa0\xa0\xa0\xa0\xa0\xa0\xa0';
+        } else {
+          elementCode = this.morseCodes[char];
         }
 
-        let elementCode = this.morseCodes[char];
         morseCode = morseCode + (elementCode ? elementCode : '');
       }
 
@@ -123,7 +122,7 @@ export default class App extends Component {
           </div>
 
           <div style={{ position: 'absolute', bottom: '15vh', justifyContent: 'center', width: '100%', display: 'flex' }}>
-            <div style={{minHeight: '5rem', width: '30vw', fontSize: '4rem', backgroundColor: 'black', color: 'white'}}>
+            <div style={{minHeight: '5rem', width: '30vw', fontSize: '3rem', backgroundColor: 'black', color: 'white'}}>
                 {this.state.morseCode}
             </div>
           </div>
