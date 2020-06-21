@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/morse-code/static/css/main.5f361e03.chunk.css",
+    "main.js": "/morse-code/static/js/main.3d44e538.chunk.js",
+    "main.js.map": "/morse-code/static/js/main.3d44e538.chunk.js.map",
+    "runtime-main.js": "/morse-code/static/js/runtime-main.092609ec.js",
+    "runtime-main.js.map": "/morse-code/static/js/runtime-main.092609ec.js.map",
+    "static/js/2.ef014ad3.chunk.js": "/morse-code/static/js/2.ef014ad3.chunk.js",
+    "static/js/2.ef014ad3.chunk.js.map": "/morse-code/static/js/2.ef014ad3.chunk.js.map",
+    "index.html": "/morse-code/index.html",
+    "precache-manifest.97600dd2d4015a5a939c2b9974924726.js": "/morse-code/precache-manifest.97600dd2d4015a5a939c2b9974924726.js",
+    "service-worker.js": "/morse-code/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/morse-code/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.ef014ad3.chunk.js.LICENSE.txt": "/morse-code/static/js/2.ef014ad3.chunk.js.LICENSE.txt",
+    "static/media/background.jpg": "/morse-code/static/media/background.589a73a1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.092609ec.js",
+    "static/js/2.ef014ad3.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.3d44e538.chunk.js"
+  ]
+}
